@@ -1,0 +1,243 @@
+.container {
+    width: 95%;
+    margin: auto;
+}
+.credentialsbox {
+    width: 20%;
+    background-color: #ddd;
+    padding: 10px 0px; 
+    box-shadow: 1px 1px 1px 0.1px black;
+}
+.credclass {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin: 15px auto;
+    border: 2px solid black;
+    font-style: italic !important;
+    font-weight: 600;
+}
+.credsubmit {
+    color:white;
+    background-color: black;
+    width: 90%;
+}
+.credclass::placeholder {
+    color: grey;
+    font-style: italic !important;
+}
+hr {
+    width: 95%;
+    margin: auto;
+}
+.credsecond {
+    font-size: 12px;
+    font-weight: bolder;
+    font-style: italic;
+    width: 90%;
+    margin: 10px auto;
+}
+.credfile {
+    margin: auto;
+    width: 90%;
+}
+#csvcontent {
+    display:none;
+}
+#mysqlcontent {
+    display: none;
+}
+.pathpart {
+    position: absolute;
+    top: 0px;
+    float: right;
+    /* background-color: #ccc; */
+    width: 25%;
+    height: 300px;
+    left: 320px;
+}
+.pathcontent {
+    width: 100%;
+    background-color: #ddd;
+    /* height: 200px; */
+    box-shadow: 1px 1px 1px 0.1px black;
+}
+.visualpart {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: 45%;
+}
+.visualcontent {
+    /* width: 40%; */
+    background-color: #ddd;
+    height: 500px;
+    box-shadow: 1px 1px 1px 0.1px black;
+}
+.visualcsv p {
+    width: 30%;
+    margin: 30px auto;
+    color: black;
+    font-weight: bold;
+    font-family: consolas;
+    border: 1px gray dashed;;
+    padding: 5px;
+    text-align: center;
+}
+.visualcsv a{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    margin: 150px auto;
+    width: 30%;
+    color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: black;
+}
+.pathheader {
+    padding:10px;
+    text-align: center;
+}
+.pathheader > label{
+    padding: 10px 30px;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+.csvdir {
+    display: none;
+}
+.csvdir > p {
+    padding: 10px;
+    color: black;
+    border: 1px solid #aaa;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #aaa;
+    font-size: 17px;
+    font-family: consolas;
+    font-weight: bold;
+}
+.mysqldir {
+    display:none;
+}
+.mysqldir > p {
+    font-size: 15px;
+    font-family: consolas;
+    font-weight: bold;
+    width: 80%;
+    margin: 10px auto !important;
+}
+.mysqldir > .button {
+    padding: 10px;
+    background-color: #aaa;
+    color: black;
+    text-align: center;
+}
+.mysqldir > .labelcheck {
+    width: 80%;
+    padding: 25px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: consolas;
+}
+#csvvisual {
+    display: none;
+}
+#mysqlvisual {
+    display: none;
+}
+.visualmysql p {
+    width: 25%;
+    margin: 30px auto;
+    color: black;
+    font-weight: bold;
+    font-family: consolas;
+    border: 1px gray dashed;;
+    padding: 5px;
+    text-align: center;
+}
+.visualmysql a{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    margin: 150px auto;
+    width: 25%;
+    color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: black;
+}
+.sbuttons {
+    position: absolute;
+    width: 100%;
+    right: 200px;   
+}
+.sbuttons p{
+    /* width: 80%; */
+}
+.primarykey {
+    width: 30%;
+    /* height: 50px; */
+    background-color: white;
+    position: absolute;
+    top: 110px;
+    left: 410px;
+    text-align: center;
+    /* display: none; */
+}
+.primarykey select {
+    width: 90%;
+    padding:5px;
+    margin-bottom: 15px;
+}
+.primarykey input{
+    padding: 5px;
+    width: 90%;
+    color: white;
+    background-color: #aaa;
+}
+.secondarykey {
+    width: 30%;
+    /* height: 50px; */
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    left: 410px;
+    text-align: center;
+    /* display: none; */
+}
+.secondarykey select {
+    width: 90%;
+    padding:5px;
+    margin-bottom: 15px;
+}
+.thirdkey {
+    width: 30%;
+    /* height: 50px; */
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    right: 410px;
+    text-align: center;
+    /* display: none; */
+}
+.thirdkey select {
+    width: 90%;
+    padding:5px;
+    margin-bottom: 15px;
+}
+.thirdkey input{
+    padding: 5px;
+    width: 90%;
+    color: white;
+    background-color: #aaa;
+}

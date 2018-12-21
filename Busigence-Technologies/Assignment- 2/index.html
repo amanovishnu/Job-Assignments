@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Busigence | Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>1. Select format</h2>
+        <div class="credentialsbox">
+            <div class="p1box">
+                <div class="credsecond">
+                    <label for="checkbox">
+                        <input type="checkbox" onclick="showmysqlcontent()" id="mysqlcheckbox"> MYSQL
+                    </label>
+                </div>
+                <div id="mysqlcontent">
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Username" value="root" name="username" required class="credclass"> 
+                        <input type="password" placeholder="password" name="password"  class="credclass">
+                        <input type="text" placeholder="hostname" value="localhost" name="hostname" required class="credclass">
+                        <input type="submit" value="Submit" name="submitbutton" class="credclass credsubmit">
+                    </form>
+                </div>
+                <hr>
+                <div class="credsecond">
+                    <label for="checkbox">
+                        <input type="checkbox" onclick="showcsvcontent()" id="csvcheckbox"> CSV
+                    </label>
+                </div>
+                <form action="/action_page.php" id="csvcontent">
+                    <div class="credfile">
+                        <input type="file" name="pic" accept="*">
+                    </div>
+                    <input type="submit" class="credclass credsubmit">
+                </form>
+            </div>
+        </div>
+        <div class="pathpart">
+            <h2>2. Select Source</h2>
+            <div class="pathcontent">
+                <div class="pathheader">
+                    <label for=""><input type="checkbox" id="mysqlsource" onclick="showmysql()">MYSQL</label>
+                    <label for=""><input type="checkbox" id="csvsource" onclick="showcsv()">CSV</label>
+                    <!-- <a href="#" onclick="showmysqlsource()">MYSQL</a>
+                    <a href="#" onclick="showcsvsource()">CSV</a> -->
+                </div>
+                <hr>
+                <div class="csvdir" id="sourcecsv" >
+                    <p>c:\amanovishnu\orders.csv</p>
+                    <br>
+                </div>
+                <div class="mysqldir" id="sourcemysql">
+                    <p>+ Information Schema</p>
+                    <hr>
+                    <p>- Learn</p>
+                    <hr>
+                    <p class="button">Customers</p>
+                    <p class="button">Orders</p>
+                    <label for="order" class="labelcheck"><input type="checkbox" name="" id="">Order ID</label>
+                    <br>
+                    <label for="Customer" class="labelcheck"><input type="checkbox" name="" id="">Customer ID</label>
+                    <br>
+                    <label for="Employement" class="labelcheck"><input type="checkbox" name="" id="">Employement ID</label>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="visualpart">
+            <h2>3. Visualiser</h2>
+            <div class="visualcontent">
+                <div class="visualcsv" id="csvvisual">
+                    <br>
+                    <p>File</p>
+                    <p>Transform</p>
+                    <p>Output as MYSQL</p>
+                    <a href="">Run the Mapping</a>
+                </div>
+                <div class="visualmysql" id="mysqlvisual">
+                    <br>
+                    <div class="sbuttons">
+                        <p>customers</p>
+                        <p>Orders</p>
+                    </div>
+                    <p>File</p>
+                    <p>Transform</p>
+                    <p>Output as MYSQL</p>
+                    <a href="">Run the Mapping</a>
+                    <div class="primarykey">
+                        <h5>Verify your primary key</h5>
+                        <select name="primarykey" id="key">
+                            <option value="sustid">Customer ID</option>
+                            <option value="name">Name</option>
+                            <option value="phone">Phone</option>
+                            <option value="email">email ID</option>
+                        </select>
+                        <select name="primarykey" id="key">
+                            <option value="sustid">Customer ID</option>
+                            <option value="name">Name</option>
+                            <option value="phone">Phone</option>
+                            <option value="email">email ID</option>
+                        </select>
+                        <input type="submit" value="JOIN">
+                        <br>
+                        <br>
+                    </div>
+                    <div class="secondarykey">
+                        <h5>Select output of the file</h5>
+                        <select name="primarykey" id="key">
+                            <option value="csv">CSV</option>
+                            <option value="mysql">MYSQL</option>
+                        </select>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="thirdkey">
+                        <h5>elect output of the file</h5>
+                        <select name="primarykey" id="key">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                        <select name="thirkey" id="key">
+                            <option value="sustid">Customer ID</option>
+                            <option value="name">Name</option>
+                            <option value="phone">Phone</option>
+                            <option value="email">email ID</option>
+                        </select>
+                        <input type="submit" value="TRANSFORM">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

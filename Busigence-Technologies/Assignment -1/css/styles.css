@@ -1,0 +1,257 @@
+.homepage {
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.invisiblehr {
+    visibility: hidden;
+}
+.productheading {
+    padding-top: 120px;
+    padding-bottom: 95px;
+    margin: 0px;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+}
+.card{
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+.productsearch {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/img21.jpg");
+    padding: 100px;
+}
+.textstyle  {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    height: 100px;
+    border: none;
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+    outline-width: 0;
+}
+.productlogo {
+    display: block;    
+    margin: auto;
+}
+
+.watchimage{
+    margin:  20px auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 1px;
+    box-shadow: 3px 3px 5px black;
+}
+.modal-body {
+    padding: 0px;
+    /* background-color: black; */
+    border-color: black;
+}
+.modal-footer {
+    padding: 0px;
+    background-color: black;
+    border-color: black;
+}
+.modal-footer button {
+    background-color: black;
+    color: white;
+}
+.modalform {
+    background-image: url("../images/img24.png") !important;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+}
+.modal-list {
+    background-color: transparent;
+    padding: 0px;
+    width: 90%;
+    border-color: black;
+    border-width: 0px 0px 2px 0px;
+    outline-width: 0px;
+}
+.modalform2 .btn {
+    /* padding: 0px !important;
+    margin: 0px !important; */
+    width: 90% !important;
+    margin: auto;
+}
+.container-refer {
+    background-image: url("/images/1.jpg") !important;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 400px;
+}
+.sharelinks {
+    border: 2px solid red;
+    padding: 10px;
+}
+.tabcard2 {
+    background-color: white !important;
+}
+
+/* Services.html Styles */
+.servicesbody {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+}
+
+.servicecontent {
+    position: static;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 30px;
+    margin-top: -10px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+.publishdate {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.myBtn {
+    width: 200px;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.myBtn:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+}
+.servicecardheader{
+    font-weight: bold;
+}
+.servicecardheader:hover {
+    color:rgb(209, 107, 40);
+}
+.servicehr {
+    margin: 30px 20px;
+    background-color: gray;
+}
+.filterbar {
+    position: absolute; 
+    z-index: 55; 
+    top: 40vh; 
+    left:35vw; 
+    text-align: center; 
+    padding: 10px 20px; 
+    background-color: transparent;
+    outline-width: 0; 
+    border-color: black; 
+    border-width: 0px 0px 5px 0px; 
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+}
+/* End of serivces.html styles */
+::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+.dropdown-header {
+    color: black;
+    font-weight: bold;
+}
+.dropdown-item:hover {
+    background-color: orange;
+}
+.textstyle::placeholder {
+    color: white;
+}
+
+/*  Styles for Desktops */
+@media only screen and (min-width: 992px) {
+    .homepage {
+        background-image: url("../images/img18.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+    .sidedown{
+        margin-top: 150px !important;
+    }
+} 
+
+
+/* Styles for Tablets */
+@media only screen and (max-width: 768px) {
+    .homepage {
+        background-image: url("../images/img17.jpg");
+        background-size: 100vw 100vh;
+    }
+    .tab-card{
+        width: 70%;
+        margin: auto;
+    }
+    .filterbar{
+        top: 20vh;
+        left: 15vw;
+    }
+} 
+
+
+/* Styles  for Mobiles */
+@media only screen and (max-width: 600px) {
+    .homepage{
+        background-image: url("../images/img17.jpg");
+        background-size: auto;
+    }
+    .col-md-4 {
+        background-color: #ddd;
+    }
+    .tab-card{
+        margin-top: 16%;
+        width: 95%;
+    }
+    .filterbar {
+        top: 15vh;
+        left: 15vw;
+        font-size: 1em;
+    }
+    .textstyle{
+        font-size: 1.5em;
+    }
+    .textstyle::placeholder {
+        color: white;
+    }
+    .productlogo{
+        width: 100%;
+    }
+} 
+/* 
+hr {
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    margin: auto;
+} */
